@@ -19,6 +19,29 @@ p {
     color: rgb(85, 85, 85);
 }
 
+.text-standard {
+    color: black;
+}
+
+.text-highlight {
+    color: rgb(25, 135, 184);
+}
+
+.nested-list {
+    list-style-type: none;
+    padding-left: 20px;
+}
+
+.nested-list li::before {
+    content: "- "; 
+    margin-right: 5px;
+}
+
+.nested-list li {
+    line-height: 1.6; /* 줄 간격을 조정 */
+    margin: 5px;
+}
+
 /* TRANSITION */
 
 a, 
@@ -43,6 +66,7 @@ nav {
     gap: 2rem;
     list-style: none;
     font-size: 1.5rem;
+    cursor: pointer;
 }
 
 a {
@@ -176,6 +200,10 @@ section {
     margin: auto 0;
 }
 
+.profile-pic {
+    border-radius: 10px;
+}
+
 .section__text {
     align-self: center;
     text-align: center;
@@ -190,7 +218,7 @@ section {
 }
 
 .section__text__p2 {
-    font-size: 1.75rem;
+    font-size: 1.5rem;
     margin-bottom: 1rem;
 }
 
@@ -210,6 +238,19 @@ section {
 
 .icon {
     cursor: pointer;
+    height: 2.5rem;
+}
+
+.home {
+    position: fixed;
+    right: 2rem;
+    bottom: 2.5rem;
+    height: 3rem;
+}
+
+.section-icon {
+    margin-left: 15px;
+    margin-right: 15px;
     height: 2rem;
 }
 
@@ -261,6 +302,12 @@ section {
     gap: 1rem;
 }
 
+/* SECTIONS */
+
+.duration {
+    font-size: 0.875rem;
+}
+
 /* EDUCATION SECTION */
 
 #education {
@@ -270,7 +317,7 @@ section {
 .education-container {
     display: flex;
     flex-direction: column;
-    gap: 3rem;
+    gap: 2.5rem;
 }
 
 .education-details-container {
@@ -278,16 +325,10 @@ section {
     flex-direction: column;
     gap: 10px;
     border-bottom: 1px solid #ccc;
-    padding-bottom: 20px;
+    padding-bottom: 25px;
 }
 
 .school-details {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-
-.school-info {
     display: flex;
     align-items: center;
     gap: 10px;
@@ -297,24 +338,125 @@ section {
     font-weight: bold;
 }
 
-.duration {
-    font-size: 0.875rem;
-}
-
 .details-container {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    margin-left: 70px;
+    margin-left: 75px;
+    margin-top: 10px;
 }
 
 .degree-name {
     font-weight: bold;
 }
 
-.home {
-    position: fixed;
-    right: 2rem;
-    bottom: 2.5rem;
-    height: 3rem;
+
+/* EXPERIENCE SECTION */
+
+#experience {
+    position: relative;
+}
+
+.experience-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+
+.experience-details-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 25px;
+}
+
+.work-details {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.work-name {
+    font-weight: bold;
+}
+
+/* CONTACT */
+
+#contact {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 70vh;
+}
+
+.contact-section-title {
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+.contact-info-upper-container {
+    display: flex;
+    justify-content: center;
+    border-radius: 2rem;
+    border: rgb(53, 53, 53) 0.1rem solid;
+    border-color: rgb(163, 163, 163);
+    background: (250, 250, 250);
+    margin: 1rem auto;
+    padding: 1rem;
+}
+
+.contact-info-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.8rem;
+    margin: 1rem;
+}
+
+.contact-info-container p {
+    font-size: larger;
+}
+
+.contact-icon {
+    cursor: default;
+    height: 1.5rem;
+}
+
+.contact-link:hover {
+    cursor: pointer;
+    color: rgb(181, 181, 181);
+    text-decoration: none;
+}
+
+/* FOOTER */
+
+footer {
+    height: 26vh;
+}
+
+footer p {
+    text-align: center;
+}
+
+.footer {
+    text-align: center;
+    margin-top: 2rem;
+    padding: 1rem;
+}
+
+.nav-links-container {
+    display: flex; 
+    justify-content: center;
+    gap: 1rem;
+}
+
+.nav-links-container a { 
+    color: rgb(53, 53, 53);
+}
+
+.nav-links-container a:hover {
+    color: gray;
+    text-decoration: underline;
+    text-decoration-color: rgb(181, 181, 181);
 }

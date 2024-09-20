@@ -29,7 +29,7 @@
                 <span></span>
             </div>
             <div class="menu-links">
-                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#profile" onclick="toggleMenu()">Profile</a></li>
                 <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
                 <li><a href="#project" onclick="toggleMenu()">Project</a></li>
                 <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
@@ -38,7 +38,11 @@
     </nav>
     <section id="profile">
         <div class="section__pic-container">
-            <img src="./assets/profile-pic.jpg" alt="Ji Hyun Kim profile pic">
+            <img 
+                src="./assets/profile-pic.jpg" 
+                alt="Ji Hyun Kim profile pic"
+                class="profile-pic"
+            />
         </div>
         <div class="section__text">
             <p class="section__text__p1">Hello, I'm</p>
@@ -76,8 +80,7 @@
     </section>
     <section id="education">
         <div class="section-title">
-            <p class="section__text__p1">Discover My</p>
-            <h1 class="title">Academic Background</h1>
+            <h1 class="section__text__p2">Education</h1>
         </div>
         <div class="section-content">
             <div class="education-container">
@@ -86,7 +89,7 @@
                         <img 
                             src="./assets/education.png" 
                             alt="Education icon" 
-                            class="icon"
+                            class="icon section-icon"
                         />
                         <div class="school-info">
                             <h3 class="school-name">University of Pennsylvania</h3>
@@ -96,6 +99,8 @@
                     <div class="details-container">
                         <h4 class="degree-name">Master of Computer & Info Tech</h4>
                         <li>GPA 4.0/4.0</li>
+                        <li>Coursework: Big Data Analytics, Artificial Intelligence, Computer Systems Programming, Algorithms & Computation, Software Design</li>
+                        <li>Awards: UX Award at the MCIT Hackathon 2024</li>
                     </div>
                 </div>
                 <div class="education-details-container">
@@ -103,7 +108,7 @@
                         <img 
                             src="./assets/education.png" 
                             alt="Education icon" 
-                            class="icon"
+                            class="icon section-icon"
                         />
                         <div class="school-info">
                             <h3 class="school-name">Korea University</h3>
@@ -111,8 +116,16 @@
                         </div>
                     </div>
                     <div class="details-container">
-                        <h4 class="degree-name">Bachelor of Public Admin & Business Admin</h4>
+                        <h4 class="degree-name">Bachelor of Public Administration & Business Administration</h4>
                         <li>GPA 3.74/4.0</li>
+                        <li>Scholarships: Academic Achievements Scholarship (Sep 2018), The Veritas Scholarship (Dec 2018), and Global Leadership Scholarship (Sep 2016)</li>
+                    </div>
+                    <div class="details-container">
+                        <h4>Undergraduate Research Assistant</h4>
+                        <li>Lab: Hypermedia Lab (Prof. Sungbin Park)</li>
+                        <li>Conducted research on hypertext, linked data, and the semantic web.</li>
+                        <li>Sponsored by the National Program of Excellence in Software.</li>
+                        <li>Contributed to over 10 research publications through collaboration with fellow researchers.</li>
                     </div>
                 </div>
             </div>
@@ -124,6 +137,100 @@
             onclick="window.scrollTo({ top: 0, behavior: 'smooth' });"
         />
     </section>    
+    <section id="experience">
+        <div class="section-title">
+            <h1 class="section__text__p2">Experience</h1>
+        </div>
+        <div class="section-content">
+            <div class="experience-container">
+                <div class="experience-details-container">
+                    <div class="work-details">
+                        <img 
+                            src="./assets/experience.png" 
+                            alt="Experience icon" 
+                            class="icon section-icon"
+                        />
+                        <div class="work-info">
+                            <h3 class="work-name">AIBIZ Global</h3>
+                            <p class="duration">May 2024 - Jul 2024</p>
+                        </div>
+                    </div>
+                    <div class="details-container">
+                        <h4 class="degree-name">Software Engineer Intern</h4>
+                        <li>Focused on <span class="text-highlight">automation & fault detection/classification</span> in semiconductor manufacturing.</li> 
+                        <li>Developed a Python program to automate transistor layout modifications with CAD tools, reducing design time <span class="text-highlight">from 1-2 months to a few minutes.</span></li>
+                        <li>Assisted in FDC by analyzing and visualizing sensor data to identify fault causes.</li>
+                    </div>
+                </div>
+                <div class="experience-details-container">
+                    <div class="work-details">
+                        <img 
+                            src="./assets/experience.png" 
+                            alt="Experience icon" 
+                            class="icon section-icon"
+                        />
+                        <div class="work-info">
+                            <h3 class="work-name">Samsung SDS</h3>
+                            <p class="duration">Feb 2021 - Jul 2023</p>
+                        </div>
+                    </div>
+                    <div class="details-container">
+                        <h4 class="degree-name">Software Engineer</h4>
+                        <p class="text-standard">Specialized in full-stack web development with expertise in the Spring framework, Java, and JavaScript. Contributed to a Global HR system serving over 100k users on a SaaS platform, managing customer data with RDBMS like Oracle and MySQL, and implementing DevOps tools such as Jenkins.</p>
+                        
+                        <li>
+                            Key Project Contribution: Played a pivotal role in a significant project for Samsung Electronics, creating a Task & Performance module that greatly improved performance evaluation processes. Contributed to the development of <span class="text-highlight">an employee-assisting chatbot project</span> by designing and implementing REST APIs.
+                        </li>
+                        <li>
+                            Cloud Operation Training: Recognized as an outstanding graduate and assigned to <span class="text-highlight">the Robotics Process Automation team</span>, where I utilized AWS cloud and Docker for efficient backend service management.
+                        </li>
+                        <li>
+                            Code Review Agent Representative: Appointed as <span class="text-highlight">the Code Review Agent representative</span>, ensuring code quality and fostering collaboration within the team.
+                        </li>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <div class="section-title">
+            <h1 class="contact-section-title">Contact Info</h1>
+        </div>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img
+                    src="./assets/gmail.png"
+                    alt="Gmail icon"
+                    class="icon contact-icon"
+                />
+                <p><a class="contact-link" href="mailto:jihyunidaaa@gmail.com">jihyunidaaa@gmail.com</a></p>
+            </div>
+            <div class="contact-info-container">
+                <img
+                    src="./assets/linkedin-2.png"
+                    alt="LinkedIn icon"
+                    class="icon contact-icon"
+                />
+                <p><a class="contact-link" href="https://www.linkedin.com/in/jihyunidaaa">LinkedIn</a></p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <a onclick="window.scrollTo({ top: 0, behavior: 'smooth' }); return false;">Profile</a>
+                    <a href="#education">Education</a>
+                    <a href="#experience">Experience</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#publications">Publications</a>
+                </ul>
+            </div>
+        </nav>
+        <p>Copyright &#169; 2024 Ji Hyun Kim. All Rights Reserved.</p>
+    </footer>
     <script src="script.js"></script>
 </body>
 </html>
