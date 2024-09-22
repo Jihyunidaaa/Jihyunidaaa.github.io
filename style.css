@@ -90,6 +90,17 @@ a:hover {
     cursor: default;
 }
 
+.logo-name {
+    font-size: 1.8rem;
+    color: black;
+}
+
+.logo-location {
+    font-size: 1rem;
+    color: gray;
+    text-align: center;
+}
+
 /* HAMBURGER MENU */
 
 #hamburger-nav {
@@ -379,6 +390,37 @@ section {
 
 .work-name {
     font-weight: bold;
+}
+
+/* PUBLICATIONS */
+
+.publication-name {
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.publication-info {
+    font-size: 0.9rem;
+}
+
+.publication-container {
+    border-bottom: 1px solid #ccc;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.publication-details-container {
+    padding-top: 10px;
+}
+
+.publication-details-container p {
+    font-size: 0.9rem;
+}
+
+.publication-link:hover {
+    cursor: pointer;
+    color: rgb(181, 181, 181);
+    text-decoration: none;
 }
 
 /* CONTACT */
